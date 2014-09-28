@@ -1,0 +1,54 @@
+package vn.mhst24.view;
+
+import tungnv.haui.mhst24.R;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class Setting extends Activity {
+	EditText editnumber, editmoneycar, editmoneytaxi, editmoneymoto;
+	Button btnEdit;
+	private static final String SPF_NAMESETTING = "setting";
+	private static final String SPF_DISTANCE = "distance";
+	private static final String SPF_MOTO = "moto";
+	private static final String SPF_CAR = "car";
+	private static final String SPF_TAXI = "taxi";
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_setting);
+		
+		
+		editnumber = (EditText) findViewById(R.id.editDistance);
+		editmoneycar = (EditText) findViewById(R.id.editMoneyCar);
+		editmoneymoto = (EditText) findViewById(R.id.editMoneyMoto);
+		editmoneytaxi = (EditText) findViewById(R.id.editMoneyTaxi);
+		btnEdit = (Button) findViewById(R.id.btnchange);
+		
+		SharedPreferences settingPreferences = getSharedPreferences(SPF_NAMESETTING, Context.MODE_PRIVATE);
+		editnumber.setText(settingPreferences.getString(SPF_DISTANCE, ""));
+		
+		btnEdit.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				String distance = editnumber.getText().toString();
+				String car = editmoneycar.getText().toString();
+				String taxi = editmoneytaxi.getText().toString();
+				String moto = editmoneymoto.getText().toString();
+				SharedPreferences settingPreferences = getSharedPreferences(SPF_NAMESETTING, Context.MODE_PRIVATE);
+				settingPreferences.edit().putString(SPF_DISTANCE, distance).putString(SPF_CAR, car).putString(SPF_MOTO, moto).putString(SPF_TAXI, taxi).commit();
+				Toast.makeText(getApplicationContext(), "Change success!", Toast.LENGTH_LONG).show();
+				Intent i = new Intent(getApplicationContext(), main.class);
+				startActivity(i);
+				finish();
+			}
+		});
+	}
+}
