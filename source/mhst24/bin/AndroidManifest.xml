@@ -12,6 +12,7 @@
         android:protectionLevel="signature" />
 
     <uses-permission android:name="com.example.mapdemo.permission.MAPS_RECEIVE" />
+    
 
     <!-- Network connectivity permissions -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -30,6 +31,7 @@
     <!-- Maps API needs OpenGL ES 2.0. -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     
 
     <application
@@ -55,6 +57,30 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="vn.mhst24.view.DetailFriend"
+            android:label="@string/app_detail" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vn.mhst24.view.InfoUsers"
+            android:label="@string/app_detail" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vn.mhst24.view.ConditionUse"
+            android:label="@string/app_condition" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="vn.mhst24.view.ChangePassword"
             android:label="@string/app_changepass" >
             <intent-filter>
@@ -71,8 +97,17 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="vn.mhst24.view.Setting"
+            android:label="@string/app_setting" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="vn.mhst24.view.Login"
-            android:label="@string/app_login" >
+            android:label="@string/app_login"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -112,7 +147,8 @@
         </activity>
         <activity
             android:name="vn.mhst24.model.ListCarPool"
-            android:label="@string/app_list_carpool" >
+            android:label="@string/app_list_carpool"
+			android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Điều khoản: Khi bạn đã đăng ký nick tại đi chung xe, bạn phải chắc chắn mình sẽ tham gia và đóng góp xây dựng cộng đồng đi chung xe trở nên tốt đẹp hơn. Bản quyền phần mềm thuộc về nhóm mhst24 và nghiêm cấm sao chép dưới mọi hình thức"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/btnnext"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/green_button"
+            android:text="Tiếp theo"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</LinearLayout>

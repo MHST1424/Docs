@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <AutoCompleteTextView
+        android:id="@+id/autoeditstart"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="Nhập điểm đi"
+        android:singleLine="true" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoeditend"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:hint="Nhập điểm đến"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btnsearch"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/autoeditend"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/green_button"
+        android:text="Tìm Kiếm"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="170dp" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>
