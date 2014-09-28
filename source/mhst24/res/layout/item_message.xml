@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<ImageView 
+	    android:id="@+id/avata"
+	    android:layout_width="50dp"
+	    android:layout_height="50dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginTop="10dp"
+	    android:src="@drawable/ic_launcher"/>
+	<TextView 
+	    android:id="@+id/txtUserName"
+	    android:layout_width="150dp"
+	    android:layout_height="50dp"
+	    android:layout_marginLeft="80dp"
+	    android:layout_marginTop="10dp"
+	    android:textStyle="bold"
+	    android:textSize="20dp"
+	    android:text="TungHaui"/>
+	<TextView 
+	    android:id="@+id/txtUserDesc"
+	    android:layout_width="150dp"
+	    android:layout_height="50dp"
+	    android:layout_marginLeft="80dp"
+	    android:layout_marginTop="40dp"
+	    android:textStyle="normal"
+	    android:textSize="15dp"
+	    android:text="Description message"/>
+	<TextView 
+	    android:id="@+id/btn_imgfriend"
+	    android:layout_width="80dp"
+	    android:layout_height="40dp"
+	    android:layout_marginTop="10dp"
+	    android:textStyle="normal"
+	    android:textSize="15dp"
+	    android:text="13:34"
+	    android:layout_alignParentRight="true"/>
+</RelativeLayout>

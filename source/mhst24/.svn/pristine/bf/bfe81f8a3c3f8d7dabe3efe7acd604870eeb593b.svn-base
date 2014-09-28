@@ -1,0 +1,289 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/nen2" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+
+        <AutoCompleteTextView
+            android:id="@+id/editD1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Điểm đi"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/btnGPS1"
+            android:layout_width="60dp"
+            android:layout_height="60sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/gps_map" />
+
+        <AutoCompleteTextView
+            android:id="@+id/editD2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:hint="Điểm đến"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/btnGPS2"
+            android:layout_width="60dp"
+            android:layout_height="60sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="85dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/gps_map" />
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="170dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/groupbox" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="155dp"
+            android:text="Thời gian"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/img_forward"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/forward"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtGioDi"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="200dp"
+            android:text="Ngày đi"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/txtNgayDi"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="200dp"
+            android:text="Ngày đến"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="235dp"
+            android:src="@drawable/arrow_back_red" />
+
+        <TextView
+            android:id="@+id/txtGioVe"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="250dp"
+            android:text="Ngày đi"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/txtNgayVe"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="250dp"
+            android:text="Ngày đến"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/imgView1"
+            android:layout_width="fill_parent"
+            android:layout_height="310dp"
+            android:layout_marginTop="330dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/groupbox" />
+
+        <Button
+            android:id="@+id/btnDangTin"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="640dp"
+            android:text="Đăng tin" />
+
+        <TextView
+            android:id="@+id/txtten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="320dp"
+            android:text="Thông tin"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/txtten1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="360dp"
+            android:text="Tôi là"
+            android:textSize="23dp" />
+
+        <RadioButton
+            android:id="@+id/chkOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="390dp" />
+
+        <ImageView
+            android:id="@+id/img_owner"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="390dp"
+            android:src="@drawable/car" />
+
+        <RadioButton
+            android:id="@+id/chkGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="390dp" />
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="390dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/txtphuongtien"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="440dp"
+            android:text="Phương tiện"
+            android:textSize="22dp" />
+
+        <RadioGroup
+            android:id="@+id/rdTransfer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout>
+
+                <RadioButton
+                    android:id="@+id/chkCar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="490dp" />
+
+                <ImageView
+                    android:id="@+id/img_motor"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="480dp"
+                    android:src="@drawable/motor" />
+
+                <RadioButton
+                    android:id="@+id/chkMoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="490dp" />
+
+                <ImageView
+                    android:id="@+id/img_car"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="480dp"
+                    android:src="@drawable/cars" />
+
+                <RadioButton
+                    android:id="@+id/chkTaxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="490dp" />
+
+                <ImageView
+                    android:id="@+id/img_taxi"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="240dp"
+                    android:layout_marginTop="480dp"
+                    android:src="@drawable/taxi" />
+            </RelativeLayout>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTien"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/chkRegural"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="580dp"
+            android:ems="10"
+            android:hint="Giá"
+            android:inputType="number"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txttam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="590dp"
+            android:text="Giá tiền"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editSoGhe"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/rdTransfer"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="540dp"
+            android:ems="10"
+            android:hint="Số ghế"
+            android:inputType="number"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txttam3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="550dp"
+            android:text="Số ghế"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</ScrollView>
